@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { projects, stats } from "@/lib/data";
 
-const categories = ["All", "Automation", "Web Dev", "AI/ML", "Security", "Backend"];
+const categories = ["All", "Live", "AI/ML", "Web Dev", "Automation", "Security", "Backend"];
 
 const categoryColors: Record<string, string> = {
   Automation: "#14B8A6",
@@ -22,6 +22,8 @@ export default function ProjectCommandCenter() {
 
   const filtered = activeCategory === "All"
     ? projects
+    : activeCategory === "Live"
+    ? projects.filter((p) => p.status === "Live")
     : projects.filter((p) => p.category === activeCategory);
 
   return (
@@ -193,9 +195,21 @@ export default function ProjectCommandCenter() {
                     </div>
 
                     {/* Status badge */}
-                    <div className="absolute top-3 right-3 flex items-center gap-1.5 px-2 py-1 rounded-full bg-black/40 border border-green-400/30 text-[10px] font-mono text-green-400">
-                      <span className="w-1 h-1 rounded-full bg-green-400 animate-pulse" />
-                      {project.status}
+                    <div
+                      className="absolute top-3 right-3 flex items-center gap-1.5 px-2 py-1 rounded-full bg-black/40 text-[10px] font-mono"
+                      style={{
+                        border: project.status === "Live"
+                          ? "1px solid rgba(74,222,128,0.5)"
+                          : "1px solid rgba(74,222,128,0.3)",
+                        color: project.status === "Live" ? "#4ade80" : "#86efac",
+                        boxShadow: project.status === "Live" ? "0 0 10px rgba(74,222,128,0.3)" : "none",
+                      }}
+                    >
+                      <span
+                        className="w-1.5 h-1.5 rounded-full animate-pulse"
+                        style={{ background: project.status === "Live" ? "#4ade80" : "#86efac" }}
+                      />
+                      {project.status === "Live" ? "🟢 LIVE" : project.status}
                     </div>
 
                     {/* Featured badge */}
@@ -247,13 +261,17 @@ export default function ProjectCommandCenter() {
                         rel="noopener noreferrer"
                         className="flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg text-xs font-bold text-white transition-all"
                         style={{
-                          background: `linear-gradient(135deg, ${color}90, ${color})`,
-                          boxShadow: isHovered ? `0 0 20px ${color}40` : "none",
+                          background: project.status === "Live"
+                            ? `linear-gradient(135deg, ${color}, ${color}cc)`
+                            : `linear-gradient(135deg, ${color}90, ${color})`,
+                          boxShadow: project.status === "Live"
+                            ? `0 0 24px ${color}60, 0 0 6px ${color}40`
+                            : isHovered ? `0 0 20px ${color}40` : "none",
                           transition: "box-shadow 0.3s",
                         }}
                       >
-                        <span>Live Demo</span>
-                        <span className="text-[10px]">⚡</span>
+                        <span>{project.status === "Live" ? "Launch App" : "Live Demo"}</span>
+                        <span className="text-[10px]">{project.status === "Live" ? "🚀" : "⚡"}</span>
                       </a>
                     </div>
                   </div>

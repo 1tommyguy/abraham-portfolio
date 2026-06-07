@@ -136,6 +136,34 @@ export const certifications = [
 export const projects = [
   {
     id: 1,
+    name: "Lead Hunter AI",
+    description:
+      "AI-powered sales intelligence platform that automates lead discovery and outreach. Features a smart outreach queue that prioritises prospects, generates personalised messages with AI, and tracks campaign performance — turning cold leads into warm conversations at scale.",
+    longDescription:
+      "Built for sales teams and solo founders who want to scale outreach without scaling headcount. Lead Hunter AI uses artificial intelligence to find, qualify, and engage prospects automatically. The outreach queue intelligently sequences follow-ups, adapts messaging based on engagement signals, and surfaces the highest-value leads first.",
+    tech: ["Next.js", "TypeScript", "AI/ML", "Vercel", "Automation", "APIs"],
+    github: "https://github.com/tommydevsec",
+    demo: "https://lead-hunter-ai-yzis.vercel.app/outreach/queue",
+    category: "AI/ML",
+    status: "Live",
+    featured: true,
+  },
+  {
+    id: 2,
+    name: "SmartBudget Planner",
+    description:
+      "Privacy-first personal finance app that runs entirely in your browser — no account, no servers, no tracking. Track income across 12 categories, analyse spending with the 50/30/20 framework, set savings goals with deadlines, estimate debt payoff, and export reports as PDF or CSV.",
+    longDescription:
+      "Built with a zero-data-collection philosophy. All financial data stays on your device using local browser storage. Supports 10 currencies including NGN, USD, EUR and GBP. Features a financial health score (0–100), guided Q&A expense categorisation, Recharts data visualisation, and full dark mode.",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Recharts", "jsPDF", "GitHub Pages"],
+    github: "https://github.com/1tommyguy/SmartBudget-Planner",
+    demo: "https://1tommyguy.github.io/SmartBudget-Planner/",
+    category: "Web Dev",
+    status: "Live",
+    featured: true,
+  },
+  {
+    id: 3,
     name: "Python Automation Suite",
     description:
       "Comprehensive automation framework for data processing, task scheduling, and system monitoring. Features intelligent error handling, logging, and modular architecture for maximum reusability.",
@@ -144,22 +172,10 @@ export const projects = [
     demo: "https://github.com/tommydevsec",
     category: "Automation",
     status: "Active",
-    featured: true,
+    featured: false,
   },
   {
-    id: 2,
-    name: "Secure Web Application",
-    description:
-      "Full-stack web application with security-first architecture. Implements input validation, access control, XSS prevention, and vulnerability mitigation for enterprise-grade reliability.",
-    tech: ["JavaScript", "Next.js", "Security", "APIs"],
-    github: "https://github.com/tommydevsec",
-    demo: "https://github.com/tommydevsec",
-    category: "Web Dev",
-    status: "Active",
-    featured: true,
-  },
-  {
-    id: 3,
+    id: 4,
     name: "AI/ML Data Pipeline",
     description:
       "End-to-end machine learning pipeline covering data ingestion, cleaning, feature engineering, and model training. Built with Python for intelligent analysis and experimentation workflows.",
@@ -168,10 +184,10 @@ export const projects = [
     demo: "https://github.com/tommydevsec",
     category: "AI/ML",
     status: "Active",
-    featured: true,
+    featured: false,
   },
   {
-    id: 4,
+    id: 5,
     name: "Cybersecurity Toolkit",
     description:
       "Collection of security tools for vulnerability assessment, secure coding audits, and system hardening. Designed for ethical security testing and application hardening workflows.",
@@ -179,18 +195,6 @@ export const projects = [
     github: "https://github.com/tommydevsec",
     demo: "https://github.com/tommydevsec",
     category: "Security",
-    status: "Active",
-    featured: false,
-  },
-  {
-    id: 5,
-    name: "Dynamic Dashboard App",
-    description:
-      "Interactive web dashboard with real-time data visualization, REST API integration, and responsive design. Enables users to monitor and interact with live data streams.",
-    tech: ["JavaScript", "React", "APIs", "Data Visualization"],
-    github: "https://github.com/tommydevsec",
-    demo: "https://github.com/tommydevsec",
-    category: "Web Dev",
     status: "Active",
     featured: false,
   },
@@ -210,9 +214,9 @@ export const projects = [
 
 export const stats = {
   projects: 6,
-  liveApps: 4,
+  liveApps: 2,
   repositories: 10,
-  technologies: 12,
+  technologies: 14,
   yearsOfExperience: 1,
 };
 
