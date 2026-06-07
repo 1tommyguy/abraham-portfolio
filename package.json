@@ -1,0 +1,42 @@
+{
+  "name": "abraham-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "15.3.3",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "@react-three/fiber": "^8.17.10",
+    "@react-three/drei": "^9.122.0",
+    "three": "^0.170.0",
+    "framer-motion": "^11.15.0",
+    "gsap": "^3.12.5",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.5.4",
+    "lucide-react": "^0.462.0",
+    "class-variance-authority": "^0.7.1",
+    "@radix-ui/react-dialog": "^1.1.4",
+    "@radix-ui/react-tooltip": "^1.1.6",
+    "react-intersection-observer": "^9.13.1",
+    "react-type-animation": "^3.2.0",
+    "react-parallax-tilt": "^1.7.272"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/three": "^0.170.0",
+    "typescript": "^5",
+    "tailwindcss": "^3.4.1",
+    "postcss": "^8",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.3"
+  }
+}
