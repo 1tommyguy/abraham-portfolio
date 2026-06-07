@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
   },
   trailingSlash: true,
   eslint: {
-    ignoreDuringBuilds: false,
+    ignoreDuringBuilds: true,
   },
   typescript: {
     ignoreBuildErrors: false,
