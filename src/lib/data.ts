@@ -164,6 +164,18 @@ export const projects = [
   },
   {
     id: 3,
+    name: "Movie Streaming Site",
+    description:
+      "A sleek, fully responsive movie streaming web app built with React and Vite. Browse movies, view details, and enjoy a modern cinematic UI with smooth navigation — all powered by a live movie database API.",
+    tech: ["React", "Vite", "Tailwind CSS", "JavaScript", "API"],
+    github: "https://github.com/1tommyguy/Movie-streaming-site",
+    demo: "https://1tommyguy.github.io/Movie-streaming-site/#/",
+    category: "Web Dev",
+    status: "Live",
+    featured: true,
+  },
+  {
+    id: 4,
     name: "Python Automation Suite",
     description:
       "Comprehensive automation framework for data processing, task scheduling, and system monitoring. Features intelligent error handling, logging, and modular architecture for maximum reusability.",
@@ -175,7 +187,7 @@ export const projects = [
     featured: false,
   },
   {
-    id: 4,
+    id: 5,
     name: "AI/ML Data Pipeline",
     description:
       "End-to-end machine learning pipeline covering data ingestion, cleaning, feature engineering, and model training. Built with Python for intelligent analysis and experimentation workflows.",
@@ -187,7 +199,7 @@ export const projects = [
     featured: false,
   },
   {
-    id: 5,
+    id: 6,
     name: "Cybersecurity Toolkit",
     description:
       "Collection of security tools for vulnerability assessment, secure coding audits, and system hardening. Designed for ethical security testing and application hardening workflows.",
@@ -199,7 +211,7 @@ export const projects = [
     featured: false,
   },
   {
-    id: 6,
+    id: 7,
     name: "API Integration Platform",
     description:
       "Modular platform for connecting multiple third-party APIs with rate limiting, error handling, and data transformation pipelines. Supports webhooks and async processing.",
@@ -213,8 +225,8 @@ export const projects = [
 ];
 
 export const stats = {
-  projects: 6,
-  liveApps: 2,
+  projects: 7,
+  liveApps: 3,
   repositories: 10,
   technologies: 14,
   yearsOfExperience: 1,
