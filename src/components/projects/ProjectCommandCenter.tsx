@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { projects, stats } from "@/lib/data";
 
-const categories = ["All", "Live", "AI/ML", "Web Dev", "Automation", "Security", "Backend"];
+const categories = ["All", "Live", "Fintech", "AI/ML", "Web Dev", "Automation", "Security", "Backend"];
 
 const categoryColors: Record<string, string> = {
   Automation: "#14B8A6",
@@ -13,6 +13,7 @@ const categoryColors: Record<string, string> = {
   "AI/ML": "#10B981",
   Security: "#EF4444",
   Backend: "#8B5CF6",
+  Fintech: "#22D3EE",
 };
 
 export default function ProjectCommandCenter() {
@@ -184,6 +185,7 @@ export default function ProjectCommandCenter() {
                           : project.category === "Web Dev" ? "🌐"
                           : project.category === "AI/ML" ? "🤖"
                           : project.category === "Security" ? "🛡️"
+                          : project.category === "Fintech" ? "💳"
                           : "🔗"}
                       </div>
                       <div

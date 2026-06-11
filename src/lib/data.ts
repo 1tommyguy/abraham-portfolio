@@ -184,7 +184,7 @@ export const projects = [
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel", "React"],
     github: "https://github.com/1tommyguy",
     demo: "https://fluxpay-luo4.vercel.app/dashboard",
-    category: "Web Dev",
+    category: "Fintech",
     status: "Live",
     featured: true,
   },
