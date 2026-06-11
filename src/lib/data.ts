@@ -176,6 +176,20 @@ export const projects = [
   },
   {
     id: 4,
+    name: "FluxPay",
+    description:
+      "A next-gen digital banking app built for Gen Z. Clean dashboard UI for managing finances, tracking transactions, and visualising spending — all wrapped in a modern, mobile-first design. Currently in demo mode.",
+    longDescription:
+      "FluxPay reimagines personal finance for the generation that grew up on smartphones. The dashboard surfaces key financial data at a glance with intuitive UX, real-time-style transaction feeds, and spending breakdowns. Built with speed and accessibility in mind — no bloat, no friction.",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel", "React"],
+    github: "https://github.com/1tommyguy",
+    demo: "https://fluxpay-luo4.vercel.app/dashboard",
+    category: "Web Dev",
+    status: "Live",
+    featured: true,
+  },
+  {
+    id: 6,
     name: "Python Automation Suite",
     description:
       "Comprehensive automation framework for data processing, task scheduling, and system monitoring. Features intelligent error handling, logging, and modular architecture for maximum reusability.",
@@ -187,7 +201,7 @@ export const projects = [
     featured: false,
   },
   {
-    id: 5,
+    id: 7,
     name: "AI/ML Data Pipeline",
     description:
       "End-to-end machine learning pipeline covering data ingestion, cleaning, feature engineering, and model training. Built with Python for intelligent analysis and experimentation workflows.",
@@ -199,7 +213,7 @@ export const projects = [
     featured: false,
   },
   {
-    id: 6,
+    id: 8,
     name: "Cybersecurity Toolkit",
     description:
       "Collection of security tools for vulnerability assessment, secure coding audits, and system hardening. Designed for ethical security testing and application hardening workflows.",
@@ -211,7 +225,7 @@ export const projects = [
     featured: false,
   },
   {
-    id: 7,
+    id: 9,
     name: "API Integration Platform",
     description:
       "Modular platform for connecting multiple third-party APIs with rate limiting, error handling, and data transformation pipelines. Supports webhooks and async processing.",
@@ -225,8 +239,8 @@ export const projects = [
 ];
 
 export const stats = {
-  projects: 7,
-  liveApps: 3,
+  projects: 8,
+  liveApps: 4,
   repositories: 10,
   technologies: 14,
   yearsOfExperience: 1,
